@@ -1,0 +1,244 @@
+/* lobster-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lobster-v23-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/lobster-v23-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/lobster-v23-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/lobster-v23-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/lobster-v23-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/lobster-v23-latin_cyrillic-regular.svg#Lobster') format('svg'); /* Legacy iOS */
+  }
+
+html {
+    font-family: 'Lobster', sans-serif;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+body {
+    background: url('../img/roses.jpg');
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 50%;
+    height: 300px;
+    width: 90%;
+    border-radius: 20px;
+    background: rgba(255,221,225, .5);
+    text-align: center; 
+    padding: 50px;
+}
+
+h1 {
+    background: rgba(255, 221, 225, .5);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.answer {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 50px;   
+    height: 75px;
+}
+
+.yes {
+    width: 50%;
+    border-right: 1px solid #000;
+    position: relative;
+    padding-right: 20px;
+    background: rgba(255, 221, 225, .5);
+    border-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.yes::after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url('../img/heart.png') center center/cover no-repeat;
+    position: absolute;
+    top: 0; 
+    right: 10px;
+}
+
+@keyframes anim {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    5% {
+        transform: translate(-35px, -50px);
+    }
+
+    10% {
+        transform: translate(-75px, -100px);
+    }
+
+    15% {
+        transform: translate(-40px, -150px);
+    }
+
+    20% {
+        transform: translate(-35px, 90px);
+    }
+
+    25% {
+        transform: translate(75px, 100px);
+    }
+
+    30% {
+        transform: translate(-35px, 150px);
+    }
+
+    35% {
+        transform: translate(-150px, 250px);
+    }
+
+    40% {
+        transform: translate(100px, -250px);
+    }
+
+    45% {
+        transform: translate(-200px, -300px);
+    }
+
+    50% {
+        transform: translate(100px, 300px)
+    }
+
+    55% {
+        transform: translate(0, -200px);
+    }
+
+    60% {
+        transform: translate(0, -100px);
+    }
+
+    65% {
+        transform: translate(-100px, 0);
+    }
+
+    70% {
+        transform: translate(-150px, 230px);
+    }
+
+    75% {
+        transform: translate(30px, -150px);
+    }
+
+    80% {
+        transform: translate(70px, -200px);
+    }
+
+    85% {
+        transform: translate(100px, 100px);
+    }
+
+    90% {
+        transform: translate(-100px, -200px);
+    }
+
+    95% {
+        transform: translate(-150px, -300px);
+    }
+
+    100% {
+        transform: translate(10px, 70px);
+    }
+}
+
+.no {
+    width: 50%;
+    position: relative;
+    padding-left: 25px;
+    animation: anim 3s 2s alternate ease-in-out infinite;
+    background: rgba(255, 221, 225, .5);
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.no::before {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: url('../img/broken-heart.png') center center/cover no-repeat;
+    position: absolute;
+    top: 0; 
+    left: 10px;
+}
+
+.wedding__wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/wedding.jpg) center center/cover no-repeat;
+    padding-top: 50%;
+}
+
+.wedding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 300px;
+    width: 90%;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .6);
+    text-align: center; 
+    padding: 50px;
+}
+
+h2 {
+    background: rgba(255, 255, 255, .6);
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 90px;
+    padding: 25px;
+}
+
+#canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.invisible {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+
+
