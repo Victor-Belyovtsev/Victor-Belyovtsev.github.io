@@ -1,0 +1,164 @@
+.love {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.love span:not(:last-child) {
+    font-size: 70px;
+    transform: translateX(-300px);
+}
+
+.love span:nth-child(2) {
+    transform: translateX(300px);
+}
+
+.love4 {
+    visibility: hidden;
+    font-size: 70px;
+}
+
+@keyframes anim-heart {
+    0% {
+        visibility: visible;
+    }
+
+    10% {
+        transform: scale(1.6, 1.6);
+    }
+
+    15% {
+        transform: scale(1, 1);
+    }
+
+    20% {
+        transform: scale(1.6, 1.6);
+    }
+
+    25% {
+        transform: scale(1, 1);
+    }
+
+    30% {
+        transform: scale(1.6, 1.6);
+    }
+
+    35% {
+        transform: scale(1, 1);
+    }
+
+    40% {
+        transform: scale(1.6, 1.6);
+    }
+
+    45% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.6, 1.6);
+    }
+
+    55% {
+        transform: scale(1, 1);
+    }
+
+    60% {
+        transform: scale(1.6, 1.6);
+    }
+
+    65% {
+        transform: scale(1, 1);
+    }
+
+    70% {
+        transform: scale(1.6, 1.6);
+    }
+
+    75% {
+        transform: scale(1, 1);
+    }
+
+    80% {
+        transform: scale(1.6, 1.6);
+    }
+
+    85% {
+        transform: scale(1, 1);
+    }
+
+    90% {
+        transform: scale(1.6, 1.6);
+    }
+
+    95% {
+        transform: scale(1, 1);
+    }
+
+    100% {
+        transform: scale(1.6, 1.6);
+        visibility: visible;
+    }
+}
+
+.love4 {
+    animation: anim-heart 6.5s 5s alternate ease-in-out infinite;
+}
+
+.love2 {
+    animation: anim-you 2.5s 1s alternate ease-in-out infinite;
+}
+
+@keyframes anim-you {
+    100% {
+        transform: translateX(0px);
+    }
+} 
+
+.love3 {
+    animation: anim-love 2.5s 2s alternate ease-in-out  infinite;
+}
+
+@keyframes anim-love {
+    100% {
+        transform: translateX(0px);
+    }
+} 
+
+.love1 {
+    animation: anim-me 2.5s 0s alternate ease-in-out  infinite;
+}
+
+@keyframes anim-me {
+    100% {
+        transform: translateX(0px);
+    }
+} 
+
+.hello {
+    position: absolute;
+    display: block;
+    left: 20%;
+    width: 10px;
+    height: 10px;
+    margin-top: 50px;
+}
+
+@keyframes chris {
+    0% {
+        width: 50px;
+        height: 50px;
+    }
+
+    100% {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.hello {
+    animation: chris 1.5s 0s alternate ease-in-out  infinite;
+}
